@@ -11,7 +11,7 @@
     <button class="btn-new-match" v-on:click="createNewMatch">NEW MATCH</button>
     <div v-if="match">
       <hr  />
-      <MatchInfo v-bind="match" :playerId="playerId" :moves="moves" />
+      <MatchInfo v-bind="match" :playerId="playerId" />
       <div v-if="match.complete && !match.over">
         <hr />
         <GameControls 
@@ -19,6 +19,7 @@
           :player-id="playerId" 
           :moves="moves" 
           :waitingPlayer="waitingPlayer"
+          :complete="match && match.complete"
         />
       </div>
     </div>

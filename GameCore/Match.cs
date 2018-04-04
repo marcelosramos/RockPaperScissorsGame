@@ -7,6 +7,7 @@ namespace GameCore
     public class Match
     {
         private string _id;
+        private Types.MOVE_TYPES _moveType;
         private IPlayer _player1 = null;
         private IPlayer _player2 = null;
         private Dictionary<string, int> _scores = new Dictionary<string, int>();
@@ -16,6 +17,7 @@ namespace GameCore
         private string _winner = null;
 
         public string Id { get => _id; }
+        public Types.MOVE_TYPES MoveType { get => _moveType; }
         public IPlayer Player1 { get => _player1; }
         public IPlayer Player2 { get => _player2; }
         public Dictionary<string, int> Scores { get => _scores; }
@@ -24,9 +26,10 @@ namespace GameCore
         public bool Over { get => _over; }
         public string Winner { get => _winner; }
 
-        public Match()
+        public Match(Types.MOVE_TYPES moveType)
         {
             _id = Guid.NewGuid().ToString();
+            _moveType = moveType;
         }
 
         public void AddNewPlayer(IPlayer player)

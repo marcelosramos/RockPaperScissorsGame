@@ -5,6 +5,7 @@ import App from './App.vue';
 Vue.config.productionTip = false;
 
 let ROOT_URL = process.env.API_URL || 'http://matchmanagerapi.azurewebsites.net';
+ROOT_URL = 'http://localhost:49445';
 const API_URL = `${ROOT_URL}/api`;
 const NEW_PLAYER_URL = `${API_URL}/player`;
 const GET_PLAYER_TYPES_URL = `${API_URL}/player`;

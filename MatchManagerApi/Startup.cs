@@ -23,7 +23,7 @@ namespace MatchManagerApi
             services.AddCors();
             services.AddSignalR();
             services.AddMvc();
-            services.AddSingleton<IMatchManagerService, MatchManagerService>();
+            services.AddSingleton<IMatchManagerService>(new MatchManagerService(GameCore.Types.MOVE_TYPES.Default));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

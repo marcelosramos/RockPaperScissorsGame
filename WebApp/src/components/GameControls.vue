@@ -2,7 +2,7 @@
   <div>
     <h2>Game Controls</h2>
     <div 
-      v-if="waitingPlayer !== playerId" 
+      v-if="complete && connectionReady && waitingPlayer !== playerId" 
       class="control-buttons"
       v-for="move in moves" 
       :key="move.intValue" 
@@ -21,15 +21,21 @@ const signalR = require("@aspnet/signalr");
 
 export default {
   name: "GameControls",
+  data(){
+    return {
+      connectionReady: false
+    }
+  },
   props: {
     matchId: String,
     playerId: String,
     moves: Array,
-    waitingPlayer: String
+    waitingPlayer: String,
+    complete: Boolean
   },
   created(){
     this.connection = new signalR.HubConnection(this.$HUB_URL);
-    this.connection.start();
+    this.connection.start().then(this.connectionReady=true);
   },
   methods: {
     onMove(value) {

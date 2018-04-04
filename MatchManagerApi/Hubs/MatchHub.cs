@@ -16,7 +16,8 @@ namespace MatchManagerApi.Hubs
 
         public async Task NewMatch(string matchId)
         {
-            await Clients.All.SendAsync(matchId, _matchManager.Matches[matchId], "");
+            await Groups.AddAsync(Context.ConnectionId, matchId);
+            await Clients.Group(matchId).SendAsync(matchId, _matchManager.Matches[matchId], "");
         }
 
         public async Task NewMove(string matchId, string playerId, string move)
@@ -24,7 +25,7 @@ namespace MatchManagerApi.Hubs
             Match match = _matchManager.Matches[matchId];
             if (_matchManager.AddMove(matchId, playerId, move))
             {
-                await Clients.All.SendAsync(matchId, match, "");
+                await Clients.Group(matchId).SendAsync(matchId, match, "");
                 if (match.Over)
                 {
                     _matchManager.RemoveMatch(match.Id);
@@ -32,7 +33,7 @@ namespace MatchManagerApi.Hubs
             }
             else
             {
-                await Clients.All.SendAsync(matchId, match, playerId);
+                await Clients.Group(matchId).SendAsync(matchId, match, playerId);
             }
         }
     }

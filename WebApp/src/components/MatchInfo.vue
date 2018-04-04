@@ -19,15 +19,15 @@
           <td>
             {{ 
               game.player1.id === playerId 
-                ? movesObj[game.player1Move.value].name
-                : movesObj[game.player2Move.value].name 
+                ? game.player1Move.move.name
+                : game.player2Move.move.name 
             }}
           </td>
           <td>
             {{ 
               game.player1.id === opponentId 
-                ? movesObj[game.player1Move.value].name 
-                : movesObj[game.player2Move.value].name 
+                ? game.player1Move.move.name 
+                : game.player2Move.move.name 
             }}
           </td>
           <td>
@@ -60,14 +60,12 @@
 </template>
 
 <script>
-import _ from 'lodash';
 
 export default {
   name: "MatchInfo",
   data() {
     return {
-      opponentId: "",
-      movesObj: {}
+      opponentId: ""
     };
   },
   props: {
@@ -81,9 +79,6 @@ export default {
     winner: String,
     playerId: String,
     moves: Array
-  },
-  created() {
-    this.movesObj =  _.keyBy(this.moves, "intValue");
   },
   updated() {
     if (this.complete) {

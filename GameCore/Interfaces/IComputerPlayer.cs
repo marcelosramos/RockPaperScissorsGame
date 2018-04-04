@@ -2,6 +2,6 @@
 {
     public interface IComputerPlayer : IPlayer
     {
-        IMove MakeNewMove();
+        IMoves MakeNewMove(Types.MOVE_TYPES moveType);
     }
 }

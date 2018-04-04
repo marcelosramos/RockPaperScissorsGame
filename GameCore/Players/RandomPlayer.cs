@@ -1,6 +1,7 @@
 ﻿using System;
 using GameCore.Interfaces;
 using GameCore.Moves;
+using GameCore.Factories;
 
 namespace GameCore.Players
 {
@@ -22,11 +23,13 @@ namespace GameCore.Players
             _id = id;
         }
 
-        public IMove MakeNewMove()
+        public IMoves MakeNewMove(Types.MOVE_TYPES moveType)
         {
+            IMoves move = MovesFactory.CreateMovesFromType(moveType);
             Random rnd = new Random();
-            int _nextMove = rnd.Next(Types.GetAllowedMoves().Count);
-            return new Move((Types.MOVES)_nextMove);
+            int _nextMove = rnd.Next(move.GetAllowedMoves().Count);
+            move.SetValue(_nextMove);
+            return move;
         }
 
     }
