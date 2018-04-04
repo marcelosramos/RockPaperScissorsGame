@@ -1,0 +1,14 @@
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\MatchManagerApi.deps.json
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\MatchManagerApi.runtimeconfig.json
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\MatchManagerApi.runtimeconfig.dev.json
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\MatchManagerApi.dll
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\MatchManagerApi.pdb
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.csprojResolveAssemblyReference.cache
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.csproj.CoreCompileInputs.cache
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.AssemblyInfoInputs.cache
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.AssemblyInfo.cs
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.dll
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.pdb
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\GameCore.dll
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\bin\Debug\netcoreapp2.0\GameCore.pdb
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\MatchManagerApi\obj\Debug\netcoreapp2.0\MatchManagerApi.csproj.CopyComplete

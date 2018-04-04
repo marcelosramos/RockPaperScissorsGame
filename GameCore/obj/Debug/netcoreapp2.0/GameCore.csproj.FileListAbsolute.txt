@@ -1,0 +1,9 @@
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\obj\Debug\netcoreapp2.0\GameCore.csprojResolveAssemblyReference.cache
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\obj\Debug\netcoreapp2.0\GameCore.csproj.CoreCompileInputs.cache
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\obj\Debug\netcoreapp2.0\GameCore.AssemblyInfoInputs.cache
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\obj\Debug\netcoreapp2.0\GameCore.AssemblyInfo.cs
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\bin\Debug\netcoreapp2.0\GameCore.deps.json
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\bin\Debug\netcoreapp2.0\GameCore.dll
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\bin\Debug\netcoreapp2.0\GameCore.pdb
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\obj\Debug\netcoreapp2.0\GameCore.dll
+C:\Users\Melina Comerio Ramos\Desktop\MARCELO\RockPaperScissorsGame\GameCore\obj\Debug\netcoreapp2.0\GameCore.pdb
