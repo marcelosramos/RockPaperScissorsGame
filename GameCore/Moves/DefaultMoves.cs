@@ -41,7 +41,7 @@ namespace GameCore.Moves
         /// <returns>1 if it wins, 2 if it loses and 0 if there is a tide.</returns>
         public int Beats(IMoves move)
         {
-            if (Move == move.Move)
+            if (Move.Value == move.Move.Value)
             {
                 return 0;
             }
