@@ -5,6 +5,7 @@ import App from './App.vue';
 Vue.config.productionTip = false;
 
 const ROOT_URL = process.env.API_URL || "http://localhost:49445";
+console.log(ROOT_URL);
 const API_URL = `${ROOT_URL}/api`;
 const NEW_PLAYER_URL = `${API_URL}/player`;
 const GET_PLAYER_TYPES_URL = `${API_URL}/player`;
